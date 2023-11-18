@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="conatiner">
+        <div class="button">
+            <button id = "new" onclick = "openModal()">Add new book</button>
+           
+        </div>
+        <div class="content">
+            <dialog class="modal">
+                <form onsubmit="submitForm()">
+                    <label for="author">author:</label>
+                    <input type = "text" id="author" required><br>
+                    <label for="title">title:</label>
+                    <input type = "text" id="title" required><br>
+                    <label for="pages">pages:</label>
+                    <input type = "number" id="pages" required><br>
+                    <label for="image">image:</label>
+                    <input type = "text" id="image" required><br>
+        
+                    <input type="submit" id="submit">
+                </form>
+            </dialog>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src = "script.js"></script>
+</body>
+</html>

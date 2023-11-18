@@ -1,0 +1,146 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Nunito&family=Playpen+Sans&display=swap');
+
+*{
+  font-family: 'Nunito', sans-serif;
+}
+/* main */
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conatiner{
+  width: 1000px;
+  height: 700px;
+  background-color: #292929;
+  display: flex;
+  border-radius: 5px;
+}
+
+.modal{
+  outline: none;
+  border:none;
+  border-radius: 3px;
+  background-color: #906387;
+  color: white;
+  position: absolute;
+  top:20%;
+  left:15%;
+  transform: translate(-50%, -50%);
+}
+
+input{
+  outline: none;
+  border-top:none;
+  border-right:none;
+  border-left:none;
+  background-color: #906387;
+  border-color: #eeebed;
+}
+
+#submit{
+  width: 100%;
+  cursor: pointer;
+  border-top:1px solid;
+  border-left:1px solid;
+  border-right:1px solid;
+  border-bottom:1px solid;
+  border-radius: 4px;
+  border-color: #292929;
+  background-color: rgb(22, 133, 22);
+  color:white;
+  margin-top: 10px;
+}
+
+/* sections */
+.button{
+  width: 30%;
+  height: 100%;
+  position: relative;
+}
+
+.content{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 5px;
+  position: relative;
+  overflow-x: hidden;
+}
+/* buttons */
+button{
+  border:none;
+  outline: none;
+  width: 70%;
+  height: 15%;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: #5fab5f;
+  color: white;
+
+}
+
+#new{
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  font-size: 25px;
+}
+
+/* card container */
+.card{
+  height: 250px;
+  width: 200px;
+  background-color: rgb(65, 65, 65);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 5px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.image img{
+  width: 160px;
+  height: 180px;
+  border-radius: 5px;
+}
+
+.card label{
+  color: white;
+}
+
+.card button{
+  width: 100%;
+  color: white;
+  background-color: rgb(207, 4, 4);
+}
+
+/* info container */
+.info{
+  max-width: 200px;
+  word-wrap: break-word;
+  position: absolute;
+  background-color: #5b446a;
+  top: 50%;
+  left: 80%;
+  display: none;
+  z-index: 999; 
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+  color: white;
+}
+
