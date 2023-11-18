@@ -29,7 +29,7 @@ function checkImage(url) {
           resolve(url);
       };
       img.onerror = function() {
-          resolve('book1.png');
+          resolve('defaulr-img.png');
       };
       img.src = url;
   });
